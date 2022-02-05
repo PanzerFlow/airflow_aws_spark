@@ -1,11 +1,8 @@
 # Batch Data Processing with Airflow , Python and Spark (AWS EMR)
-# Prerequisites
-
-1. [docker] (With WSL2 as backend)
-3. [AWS_account] (With AWS CLI configured) 
-4. [MySQL] (Allow data export)
 
 # Design
+
+![Architecture](airflow_conn/airflow_batch_architecture.PNG)
 
 ![DAG Design](airflow_conn/airflow_dag.PNG)
 
@@ -17,6 +14,12 @@ Insert the following csv into your sql
 aws s3 cp s3://start-data-engg/data.zip ./
 unzip data.zip
 ```
+
+# Prerequisites
+
+1. [docker] (With WSL2 as backend)
+3. [AWS_account] (With AWS CLI configured) 
+4. [MySQL] (Allow data export)
 
 
 # Credit
