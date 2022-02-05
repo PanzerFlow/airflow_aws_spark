@@ -1,0 +1,23 @@
+[2022-02-05 19:40:03,169] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: beginner_batch_processing.extract_online_retail_data manual__2022-02-05T19:40:00.731743+00:00 [queued]>
+[2022-02-05 19:40:03,182] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: beginner_batch_processing.extract_online_retail_data manual__2022-02-05T19:40:00.731743+00:00 [queued]>
+[2022-02-05 19:40:03,183] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-02-05 19:40:03,183] {taskinstance.py:1239} INFO - Starting attempt 1 of 3
+[2022-02-05 19:40:03,183] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-02-05 19:40:03,203] {taskinstance.py:1259} INFO - Executing <Task(PythonOperator): extract_online_retail_data> on 2022-02-05 19:40:00.731743+00:00
+[2022-02-05 19:40:03,209] {standard_task_runner.py:52} INFO - Started process 1014 to run task
+[2022-02-05 19:40:03,214] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'beginner_batch_processing', 'extract_online_retail_data', 'manual__2022-02-05T19:40:00.731743+00:00', '--job-id', '24', '--raw', '--subdir', 'DAGS_FOLDER/beginner_batch_processing.py', '--cfg-path', '/tmp/tmp7umokbl5', '--error-file', '/tmp/tmp57x0mhag']
+[2022-02-05 19:40:03,215] {standard_task_runner.py:77} INFO - Job 24: Subtask extract_online_retail_data
+[2022-02-05 19:40:03,281] {logging_mixin.py:109} INFO - Running <TaskInstance: beginner_batch_processing.extract_online_retail_data manual__2022-02-05T19:40:00.731743+00:00 [running]> on host 3479a57d1d64
+[2022-02-05 19:40:03,346] {taskinstance.py:1426} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=beginner_batch_processing
+AIRFLOW_CTX_TASK_ID=extract_online_retail_data
+AIRFLOW_CTX_EXECUTION_DATE=2022-02-05T19:40:00.731743+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-02-05T19:40:00.731743+00:00
+[2022-02-05 19:40:03,773] {base.py:79} INFO - Using connection to: id: mysql_default. Host: host.docker.internal, Port: 3306, Schema: project, Login: root, Password: ***, extra: {'local_infile': True}
+[2022-02-05 19:40:12,985] {python.py:175} INFO - Done. Returned value was: None
+[2022-02-05 19:40:13,001] {taskinstance.py:1277} INFO - Marking task as SUCCESS. dag_id=beginner_batch_processing, task_id=extract_online_retail_data, execution_date=20220205T194000, start_date=20220205T194003, end_date=20220205T194013
+[2022-02-05 19:40:13,073] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-02-05 19:40:13,132] {local_task_job.py:264} INFO - 2 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,31 @@
+[2022-02-05 19:40:44,213] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: beginner_batch_processing.add_emr_steps manual__2022-02-05T19:40:00.731743+00:00 [queued]>
+[2022-02-05 19:40:44,224] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: beginner_batch_processing.add_emr_steps manual__2022-02-05T19:40:00.731743+00:00 [queued]>
+[2022-02-05 19:40:44,224] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-02-05 19:40:44,224] {taskinstance.py:1239} INFO - Starting attempt 1 of 3
+[2022-02-05 19:40:44,224] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-02-05 19:40:44,241] {taskinstance.py:1259} INFO - Executing <Task(EmrAddStepsOperator): add_emr_steps> on 2022-02-05 19:40:00.731743+00:00
+[2022-02-05 19:40:44,247] {standard_task_runner.py:52} INFO - Started process 1066 to run task
+[2022-02-05 19:40:44,252] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'beginner_batch_processing', 'add_emr_steps', 'manual__2022-02-05T19:40:00.731743+00:00', '--job-id', '28', '--raw', '--subdir', 'DAGS_FOLDER/beginner_batch_processing.py', '--cfg-path', '/tmp/tmp_35gew7m', '--error-file', '/tmp/tmpaccur5nk']
+[2022-02-05 19:40:44,252] {standard_task_runner.py:77} INFO - Job 28: Subtask add_emr_steps
+[2022-02-05 19:40:44,326] {logging_mixin.py:109} INFO - Running <TaskInstance: beginner_batch_processing.add_emr_steps manual__2022-02-05T19:40:00.731743+00:00 [running]> on host 3479a57d1d64
+[2022-02-05 19:40:44,411] {taskinstance.py:1426} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=beginner_batch_processing
+AIRFLOW_CTX_TASK_ID=add_emr_steps
+AIRFLOW_CTX_EXECUTION_DATE=2022-02-05T19:40:00.731743+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-02-05T19:40:00.731743+00:00
+[2022-02-05 19:40:44,412] {base_aws.py:401} INFO - Airflow Connection: aws_conn_id=aws_default
+[2022-02-05 19:40:44,422] {base_aws.py:177} INFO - Credentials retrieved from login
+[2022-02-05 19:40:44,423] {base_aws.py:88} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-02-05 19:40:44,423] {base_aws.py:93} INFO - Creating session with aws_access_key_id=AKIA53YL7CVELHKGVOP4 region_name=us-east-1
+[2022-02-05 19:40:44,439] {base_aws.py:168} INFO - role_arn is None
+[2022-02-05 19:40:44,440] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/providers/amazon/aws/hooks/base_aws.py:494: DeprecationWarning: client_type is deprecated. Set client_type from class attribute.
+  return self.get_client_type(self.client_type, region_name=self.region_name)
+
+[2022-02-05 19:40:44,485] {emr_add_steps.py:91} INFO - Adding steps to j-24BL60JV7BKFD
+[2022-02-05 19:40:44,989] {emr_add_steps.py:104} INFO - Steps ['s-W94W5WI9L9TT', 's-2Z88798CUU4GJ', 's-10GRBA5S1E95U'] added to JobFlow
+[2022-02-05 19:40:45,017] {taskinstance.py:1277} INFO - Marking task as SUCCESS. dag_id=beginner_batch_processing, task_id=add_emr_steps, execution_date=20220205T194000, start_date=20220205T194044, end_date=20220205T194045
+[2022-02-05 19:40:45,069] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-02-05 19:40:45,119] {local_task_job.py:264} INFO - 1 downstream tasks scheduled from follow-on schedule check

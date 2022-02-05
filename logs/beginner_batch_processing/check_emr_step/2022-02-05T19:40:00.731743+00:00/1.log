@@ -1,0 +1,54 @@
+[2022-02-05 19:40:46,533] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: beginner_batch_processing.check_emr_step manual__2022-02-05T19:40:00.731743+00:00 [queued]>
+[2022-02-05 19:40:46,544] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: beginner_batch_processing.check_emr_step manual__2022-02-05T19:40:00.731743+00:00 [queued]>
+[2022-02-05 19:40:46,544] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-02-05 19:40:46,544] {taskinstance.py:1239} INFO - Starting attempt 1 of 3
+[2022-02-05 19:40:46,544] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-02-05 19:40:46,558] {taskinstance.py:1259} INFO - Executing <Task(EmrStepSensor): check_emr_step> on 2022-02-05 19:40:00.731743+00:00
+[2022-02-05 19:40:46,563] {standard_task_runner.py:52} INFO - Started process 1068 to run task
+[2022-02-05 19:40:46,568] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'beginner_batch_processing', 'check_emr_step', 'manual__2022-02-05T19:40:00.731743+00:00', '--job-id', '29', '--raw', '--subdir', 'DAGS_FOLDER/beginner_batch_processing.py', '--cfg-path', '/tmp/tmpnmd_y5or', '--error-file', '/tmp/tmpniy585t3']
+[2022-02-05 19:40:46,568] {standard_task_runner.py:77} INFO - Job 29: Subtask check_emr_step
+[2022-02-05 19:40:46,627] {logging_mixin.py:109} INFO - Running <TaskInstance: beginner_batch_processing.check_emr_step manual__2022-02-05T19:40:00.731743+00:00 [running]> on host 3479a57d1d64
+[2022-02-05 19:40:46,704] {taskinstance.py:1426} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=beginner_batch_processing
+AIRFLOW_CTX_TASK_ID=check_emr_step
+AIRFLOW_CTX_EXECUTION_DATE=2022-02-05T19:40:00.731743+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-02-05T19:40:00.731743+00:00
+[2022-02-05 19:40:46,705] {base_aws.py:401} INFO - Airflow Connection: aws_conn_id=aws_default
+[2022-02-05 19:40:46,714] {base_aws.py:177} INFO - Credentials retrieved from login
+[2022-02-05 19:40:46,714] {base_aws.py:88} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-02-05 19:40:46,714] {base_aws.py:93} INFO - Creating session with aws_access_key_id=AKIA53YL7CVELHKGVOP4 region_name=us-east-1
+[2022-02-05 19:40:46,729] {base_aws.py:168} INFO - role_arn is None
+[2022-02-05 19:40:46,730] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/providers/amazon/aws/hooks/base_aws.py:494: DeprecationWarning: client_type is deprecated. Set client_type from class attribute.
+  return self.get_client_type(self.client_type, region_name=self.region_name)
+
+[2022-02-05 19:40:46,760] {emr_step.py:73} INFO - Poking step s-10GRBA5S1E95U on cluster j-24BL60JV7BKFD
+[2022-02-05 19:40:47,145] {emr_base.py:66} INFO - Job flow currently PENDING
+[2022-02-05 19:41:47,202] {emr_step.py:73} INFO - Poking step s-10GRBA5S1E95U on cluster j-24BL60JV7BKFD
+[2022-02-05 19:41:47,640] {emr_base.py:66} INFO - Job flow currently PENDING
+[2022-02-05 19:42:47,693] {emr_step.py:73} INFO - Poking step s-10GRBA5S1E95U on cluster j-24BL60JV7BKFD
+[2022-02-05 19:42:48,121] {emr_base.py:66} INFO - Job flow currently PENDING
+[2022-02-05 19:43:48,144] {emr_step.py:73} INFO - Poking step s-10GRBA5S1E95U on cluster j-24BL60JV7BKFD
+[2022-02-05 19:43:48,591] {emr_base.py:66} INFO - Job flow currently PENDING
+[2022-02-05 19:44:48,653] {emr_step.py:73} INFO - Poking step s-10GRBA5S1E95U on cluster j-24BL60JV7BKFD
+[2022-02-05 19:44:49,101] {emr_base.py:66} INFO - Job flow currently PENDING
+[2022-02-05 19:45:49,153] {emr_step.py:73} INFO - Poking step s-10GRBA5S1E95U on cluster j-24BL60JV7BKFD
+[2022-02-05 19:45:49,563] {emr_base.py:66} INFO - Job flow currently PENDING
+[2022-02-05 19:46:49,615] {emr_step.py:73} INFO - Poking step s-10GRBA5S1E95U on cluster j-24BL60JV7BKFD
+[2022-02-05 19:46:50,053] {emr_base.py:66} INFO - Job flow currently PENDING
+[2022-02-05 19:47:50,113] {emr_step.py:73} INFO - Poking step s-10GRBA5S1E95U on cluster j-24BL60JV7BKFD
+[2022-02-05 19:47:50,512] {emr_base.py:66} INFO - Job flow currently PENDING
+[2022-02-05 19:48:50,563] {emr_step.py:73} INFO - Poking step s-10GRBA5S1E95U on cluster j-24BL60JV7BKFD
+[2022-02-05 19:48:51,050] {emr_base.py:66} INFO - Job flow currently PENDING
+[2022-02-05 19:49:51,102] {emr_step.py:73} INFO - Poking step s-10GRBA5S1E95U on cluster j-24BL60JV7BKFD
+[2022-02-05 19:49:51,550] {emr_base.py:66} INFO - Job flow currently PENDING
+[2022-02-05 19:50:51,567] {emr_step.py:73} INFO - Poking step s-10GRBA5S1E95U on cluster j-24BL60JV7BKFD
+[2022-02-05 19:50:51,974] {emr_base.py:66} INFO - Job flow currently RUNNING
+[2022-02-05 19:51:52,033] {emr_step.py:73} INFO - Poking step s-10GRBA5S1E95U on cluster j-24BL60JV7BKFD
+[2022-02-05 19:51:52,468] {emr_base.py:66} INFO - Job flow currently COMPLETED
+[2022-02-05 19:51:52,468] {base.py:249} INFO - Success criteria met. Exiting.
+[2022-02-05 19:51:52,509] {taskinstance.py:1277} INFO - Marking task as SUCCESS. dag_id=beginner_batch_processing, task_id=check_emr_step, execution_date=20220205T194000, start_date=20220205T194046, end_date=20220205T195152
+[2022-02-05 19:51:52,543] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-02-05 19:51:52,575] {local_task_job.py:264} INFO - 1 downstream tasks scheduled from follow-on schedule check

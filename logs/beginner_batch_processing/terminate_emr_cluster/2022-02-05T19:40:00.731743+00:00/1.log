@@ -1,0 +1,31 @@
+[2022-02-05 19:51:53,687] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: beginner_batch_processing.terminate_emr_cluster manual__2022-02-05T19:40:00.731743+00:00 [queued]>
+[2022-02-05 19:51:53,697] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: beginner_batch_processing.terminate_emr_cluster manual__2022-02-05T19:40:00.731743+00:00 [queued]>
+[2022-02-05 19:51:53,697] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-02-05 19:51:53,697] {taskinstance.py:1239} INFO - Starting attempt 1 of 3
+[2022-02-05 19:51:53,697] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-02-05 19:51:53,707] {taskinstance.py:1259} INFO - Executing <Task(EmrTerminateJobFlowOperator): terminate_emr_cluster> on 2022-02-05 19:40:00.731743+00:00
+[2022-02-05 19:51:53,711] {standard_task_runner.py:52} INFO - Started process 1597 to run task
+[2022-02-05 19:51:53,714] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'beginner_batch_processing', 'terminate_emr_cluster', 'manual__2022-02-05T19:40:00.731743+00:00', '--job-id', '30', '--raw', '--subdir', 'DAGS_FOLDER/beginner_batch_processing.py', '--cfg-path', '/tmp/tmplibye7b6', '--error-file', '/tmp/tmpru620q03']
+[2022-02-05 19:51:53,715] {standard_task_runner.py:77} INFO - Job 30: Subtask terminate_emr_cluster
+[2022-02-05 19:51:53,762] {logging_mixin.py:109} INFO - Running <TaskInstance: beginner_batch_processing.terminate_emr_cluster manual__2022-02-05T19:40:00.731743+00:00 [running]> on host 3479a57d1d64
+[2022-02-05 19:51:53,814] {taskinstance.py:1426} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=beginner_batch_processing
+AIRFLOW_CTX_TASK_ID=terminate_emr_cluster
+AIRFLOW_CTX_EXECUTION_DATE=2022-02-05T19:40:00.731743+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-02-05T19:40:00.731743+00:00
+[2022-02-05 19:51:53,815] {base_aws.py:401} INFO - Airflow Connection: aws_conn_id=aws_default
+[2022-02-05 19:51:53,823] {base_aws.py:177} INFO - Credentials retrieved from login
+[2022-02-05 19:51:53,823] {base_aws.py:88} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-02-05 19:51:53,823] {base_aws.py:93} INFO - Creating session with aws_access_key_id=AKIA53YL7CVELHKGVOP4 region_name=us-east-1
+[2022-02-05 19:51:53,835] {base_aws.py:168} INFO - role_arn is None
+[2022-02-05 19:51:53,836] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/providers/amazon/aws/hooks/base_aws.py:494: DeprecationWarning: client_type is deprecated. Set client_type from class attribute.
+  return self.get_client_type(self.client_type, region_name=self.region_name)
+
+[2022-02-05 19:51:53,862] {emr_terminate_job_flow.py:48} INFO - Terminating JobFlow j-24BL60JV7BKFD
+[2022-02-05 19:51:54,288] {emr_terminate_job_flow.py:54} INFO - JobFlow with id j-24BL60JV7BKFD terminated
+[2022-02-05 19:51:54,298] {taskinstance.py:1277} INFO - Marking task as SUCCESS. dag_id=beginner_batch_processing, task_id=terminate_emr_cluster, execution_date=20220205T194000, start_date=20220205T195153, end_date=20220205T195154
+[2022-02-05 19:51:54,330] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-02-05 19:51:54,357] {local_task_job.py:264} INFO - 1 downstream tasks scheduled from follow-on schedule check
