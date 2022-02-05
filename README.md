@@ -7,7 +7,7 @@
 
 # Design
 
-![DAG Design](airflow_conn/airflow.png)
+![DAG Design](airflow_conn/airflow_dag.PNG)
 
 # Data
 
