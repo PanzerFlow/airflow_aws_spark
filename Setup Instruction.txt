@@ -1,0 +1,34 @@
+First time setup
+    Getting the yaml file from airflow official website
+        wget https://airflow.apache.org/docs/apache-airflow/2.2.3/docker-compose.yaml
+    
+    Make a local dir and navigate to it
+        mkdir ~/Development/Project/airflow_aws_spark
+        cd ~/Development/Project/airflow_aws_spark
+        
+    Spinning up local Airflow infrastructure
+        echo "Spinning up local Airflow infrastructure"
+        rm -rf temp;
+        mkdir temp;
+        rm -rf logs;
+        mkdir logs;
+        rm -rf dags;
+        mkdir dags;
+        rm -rf data;
+        mkdir data;
+    
+    Start airflow via docker (wait 5 mins after this to let Airflow containers reach a healthy state)
+        docker-compose -f docker-compose.yaml up -d
+
+    Go to airflow UI and set up the connections in the airflow_conn folder
+
+
+After the first time
+    Start airflow via docker
+        docker-compose -f docker-compose.yaml up -d
+    Check health 
+        docker-compose ps
+
+
+
+        

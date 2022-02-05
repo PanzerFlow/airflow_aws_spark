@@ -1,0 +1,33 @@
+[2022-02-05 19:38:45,719] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: beginner_batch_processing.check_emr_step manual__2022-02-05T19:31:57.468572+00:00 [queued]>
+[2022-02-05 19:38:45,726] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: beginner_batch_processing.check_emr_step manual__2022-02-05T19:31:57.468572+00:00 [queued]>
+[2022-02-05 19:38:45,726] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-02-05 19:38:45,726] {taskinstance.py:1239} INFO - Starting attempt 1 of 3
+[2022-02-05 19:38:45,726] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-02-05 19:38:45,736] {taskinstance.py:1259} INFO - Executing <Task(EmrStepSensor): check_emr_step> on 2022-02-05 19:31:57.468572+00:00
+[2022-02-05 19:38:45,740] {standard_task_runner.py:52} INFO - Started process 956 to run task
+[2022-02-05 19:38:45,743] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'beginner_batch_processing', 'check_emr_step', 'manual__2022-02-05T19:31:57.468572+00:00', '--job-id', '23', '--raw', '--subdir', 'DAGS_FOLDER/beginner_batch_processing.py', '--cfg-path', '/tmp/tmpiuy2h81h', '--error-file', '/tmp/tmp1w3slcdq']
+[2022-02-05 19:38:45,743] {standard_task_runner.py:77} INFO - Job 23: Subtask check_emr_step
+[2022-02-05 19:38:45,786] {logging_mixin.py:109} INFO - Running <TaskInstance: beginner_batch_processing.check_emr_step manual__2022-02-05T19:31:57.468572+00:00 [running]> on host 3479a57d1d64
+[2022-02-05 19:38:45,840] {taskinstance.py:1426} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=beginner_batch_processing
+AIRFLOW_CTX_TASK_ID=check_emr_step
+AIRFLOW_CTX_EXECUTION_DATE=2022-02-05T19:31:57.468572+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-02-05T19:31:57.468572+00:00
+[2022-02-05 19:38:45,841] {base_aws.py:401} INFO - Airflow Connection: aws_conn_id=aws_default
+[2022-02-05 19:38:45,848] {base_aws.py:177} INFO - Credentials retrieved from login
+[2022-02-05 19:38:45,849] {base_aws.py:88} INFO - Retrieving region_name from Connection.extra_config['region_name']
+[2022-02-05 19:38:45,849] {base_aws.py:93} INFO - Creating session with aws_access_key_id=AKIA53YL7CVELHKGVOP4 region_name=us-east-1
+[2022-02-05 19:38:45,859] {base_aws.py:168} INFO - role_arn is None
+[2022-02-05 19:38:45,860] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/providers/amazon/aws/hooks/base_aws.py:494: DeprecationWarning: client_type is deprecated. Set client_type from class attribute.
+  return self.get_client_type(self.client_type, region_name=self.region_name)
+
+[2022-02-05 19:38:45,881] {emr_step.py:73} INFO - Poking step s-6REKWR2WS4SS on cluster j-2NBHFPWZ1PHQI
+[2022-02-05 19:38:46,276] {emr_base.py:66} INFO - Job flow currently PENDING
+[2022-02-05 19:39:16,051] {local_task_job.py:212} WARNING - State of this instance has been externally set to failed. Terminating instance.
+[2022-02-05 19:39:16,052] {process_utils.py:124} INFO - Sending Signals.SIGTERM to group 956. PIDs of all processes in the group: [956]
+[2022-02-05 19:39:16,052] {process_utils.py:75} INFO - Sending the signal Signals.SIGTERM to group 956
+[2022-02-05 19:39:16,053] {taskinstance.py:1408} ERROR - Received SIGTERM. Terminating subprocesses.
+[2022-02-05 19:39:16,079] {process_utils.py:70} INFO - Process psutil.Process(pid=956, status='terminated', exitcode=0, started='19:38:44') (956) terminated with exit code 0
